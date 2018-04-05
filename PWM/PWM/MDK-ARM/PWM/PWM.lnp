@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.sp --fpu=FPv4-SP
+"pwm\stm32f7xx_hal_msp.o"
+"pwm\stm32f7xx_it.o"
+"pwm\main.o"
+"pwm\system_stm32f7xx.o"
+"pwm\startup_stm32f746xx.o"
+"pwm\stm32f7xx_hal_flash.o"
+"pwm\stm32f7xx_hal_tim_ex.o"
+"pwm\stm32f7xx_hal_i2c_ex.o"
+"pwm\stm32f7xx_hal_pwr_ex.o"
+"pwm\stm32f7xx_hal_tim.o"
+"pwm\stm32f7xx_hal_rcc_ex.o"
+"pwm\stm32f7xx_hal_dma_ex.o"
+"pwm\stm32f7xx_hal_flash_ex.o"
+"pwm\stm32f7xx_hal.o"
+"pwm\stm32f7xx_hal_rcc.o"
+"pwm\stm32f7xx_hal_gpio.o"
+"pwm\stm32f7xx_hal_cortex.o"
+"pwm\stm32f7xx_hal_dma.o"
+"pwm\stm32f7xx_hal_pwr.o"
+"pwm\stm32f7xx_hal_i2c.o"
+--library_type=microlib --strict --scatter "PWM\PWM.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM.map" -o PWM\PWM.axf
