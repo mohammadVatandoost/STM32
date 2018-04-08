@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.sp --fpu=FPv4-SP
+"toggling\stm32f7xx_hal_rcc_ex.o"
+"toggling\stm32f7xx_hal_flash.o"
+"toggling\stm32f7xx_hal.o"
+"toggling\stm32f7xx_hal_gpio.o"
+"toggling\stm32f7xx_hal_cortex.o"
+"toggling\stm32f7xx_hal_rcc.o"
+"toggling\stm32f7xx_hal_i2c_ex.o"
+"toggling\stm32f7xx_hal_pwr_ex.o"
+"toggling\stm32f7xx_hal_tim_ex.o"
+"toggling\stm32f7xx_hal_dma_ex.o"
+"toggling\stm32f7xx_hal_tim.o"
+"toggling\stm32f7xx_hal_i2c.o"
+"toggling\stm32f7xx_hal_pwr.o"
+"toggling\stm32f7xx_hal_flash_ex.o"
+"toggling\stm32f7xx_hal_dma.o"
+"toggling\stm32f7xx_it.o"
+"toggling\stm32f7xx_hal_msp.o"
+"toggling\main.o"
+"toggling\startup_stm32f746xx.o"
+"toggling\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "Toggling\Toggling.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Toggling.map" -o Toggling\Toggling.axf

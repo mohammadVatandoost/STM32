@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.sp --fpu=FPv4-SP
+"test\startup_stm32f746xx.o"
+"test\stm32f7xx_hal_cortex.o"
+"test\stm32f7xx_hal_flash.o"
+"test\stm32f7xx_hal_i2c.o"
+"test\stm32f7xx_hal_gpio.o"
+"test\stm32f7xx_hal_i2c_ex.o"
+"test\stm32f7xx_hal_tim.o"
+"test\stm32f7xx_hal_flash_ex.o"
+"test\stm32f7xx_hal.o"
+"test\stm32f7xx_hal_pwr_ex.o"
+"test\stm32f7xx_hal_tim_ex.o"
+"test\stm32f7xx_hal_rcc_ex.o"
+"test\stm32f7xx_hal_rcc.o"
+"test\stm32f7xx_hal_dma.o"
+"test\stm32f7xx_hal_dma_ex.o"
+"test\stm32f7xx_hal_pwr.o"
+"test\system_stm32f7xx.o"
+"test\stm32f7xx_it.o"
+"test\main.o"
+"test\stm32f7xx_hal_msp.o"
+--library_type=microlib --strict --scatter "test\test.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test.map" -o test\test.axf
